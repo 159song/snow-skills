@@ -1,0 +1,15 @@
+{
+  "name": "snow-skills",
+  "owner": {
+    "name": "snow"
+  },
+  "description": "snow 的个人 Claude Code skill 集合（RAG / pi-agent / 工程方法论）。",
+  "plugins": [
+    {
+      "name": "snow-skills",
+      "source": "./",
+      "description": "个人 skill 集合：RAG 架构设计与评测、pi-agent SDK 开发、工程方法论（TDD/代码评审/领域建模等）。",
+      "category": "personal"
+    }
+  ]
+}
