@@ -5,11 +5,11 @@
 ## 安装
 
 ```bash
-claude plugin marketplace add <my-github-username>/snow-skills
+claude plugin marketplace add 159song/snow-skills
 claude plugin install snow-skills@snow-skills
 ```
 
-或在 Claude Code 内执行 `/plugin marketplace add <my-github-username>/snow-skills`。
+或在 Claude Code 内执行 `/plugin marketplace add 159song/snow-skills`。
 
 ## 收录内容
 
