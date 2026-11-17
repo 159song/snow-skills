@@ -7,7 +7,7 @@
   },
   "license": "MIT",
   "skills": [
-    "./skills/rag-architect",
+    "./skills/rag-lifecycle",
     "./skills/dg-piagent",
     "./skills/engineering/ask-matt",
     "./skills/engineering/code-review",
