@@ -15,7 +15,7 @@ claude plugin install snow-skills@snow-skills
 
 | Skill | 来源 | 说明 |
 |---|---|---|
-| `rag-architect` | rag-architect + rag-skills 合并 | 设计、调优、评测生产级 RAG 管线：3 个确定性 Python 工具（chunking 优化 / 管线设计 / 检索评测）+ 40 余篇按需加载的专题指南 |
+| `rag-lifecycle` | rag-architect + rag-skills 合并重排，融入《生产级 RAG 系统》 | RAG 全生命周期：需求分析、选型设计、构建、生产化运维：3 个确定性 Python 工具 + 43 篇指南 + 15 章生产检查清单 |
 | `dg-piagent` | 原创 | pi-agent / @earendil-works/pi-coding-agent SDK 开发：创建 agent、自定义工具、企业内网接口接入评估等 |
 | `engineering/*`（18 个） | mattpocock/skills（翻译收录） | TDD、代码评审、领域建模、诊断 bug、spec/工单流等工程方法论 |
 | `productivity/*`（7 个） | mattpocock/skills（翻译收录） | grilling 追问、教学、交接、写作等生产力 skill |
@@ -25,7 +25,7 @@ claude plugin install snow-skills@snow-skills
 ```
 .claude-plugin/     # marketplace.json + plugin.json
 skills/
-  rag-architect/    # RAG 合并 skill（SKILL.md + 工具 + guides/）
+  rag-lifecycle/    # RAG 全生命周期 skill（SKILL.md + 工具 + guides/ + 生产检查清单）
   dg-piagent/
   engineering/      # mattpocock 工程类
   productivity/     # mattpocock 生产力类
@@ -33,10 +33,10 @@ skills/
 
 ## 来源与致谢
 
-- **rag-architect / rag-skills**：RAG 专题指南合集（MIT，翻译并合并为单 skill）
+- **rag-architect / rag-skills**：RAG 专题指南合集（MIT），其指南经翻译合并进入 `rag-lifecycle`，并按《生产级 RAG 系统——从架构到 Python 实现》的 15 章生命周期重新组织，新增数据模型、可验证引用、安全威胁模型、可观测性与生产检查清单
 - **mattpocock/skills**：Matt Pocock 的工程方法论 skill（MIT，翻译收录稳定集）
 
-两者均为冻结副本（vendor），上游更新需手动同步。详见 `LICENSE` 中的版权声明。
+mattpocock 系列为冻结副本（vendor），上游更新需手动同步；`rag-lifecycle` 为原创重设计，不再跟随上游。详见 `LICENSE` 中的版权声明。
 
 ## License
 
