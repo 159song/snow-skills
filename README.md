@@ -17,10 +17,20 @@ claude plugin install snow-skills@snow-skills
 
 ### Codex CLI
 
-在本仓库根目录运行以下命令，然后新开 Codex 会话：
+安装 GitHub 已发布版本，然后新开 Codex 会话：
 
 ```bash
-codex plugin marketplace add .
+codex plugin marketplace add 159song/snow-skills
+codex plugin add snow-skills@snow-skills
+```
+
+测试本地已提交版本时，从仓库根目录导出插件文件到独立目录。Codex 会将本地安装源复制到缓存；保留导出目录供后续刷新。
+
+```bash
+mkdir -p ~/.local/share/snow-skills
+plugin_src=$(mktemp -d ~/.local/share/snow-skills/local.XXXXXXXX)
+git archive HEAD .claude-plugin .codex-plugin skills output-styles README.md LICENSE | tar -x -C "$plugin_src"
+codex plugin marketplace add "$plugin_src"
 codex plugin add snow-skills@snow-skills
 ```
 
