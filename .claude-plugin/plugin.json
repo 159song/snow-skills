@@ -1,7 +1,7 @@
 {
   "name": "snow-skills",
-  "version": "0.1.0",
-  "description": "个人 Claude Code skill 集合：RAG 架构设计与评测、pi-agent SDK 开发、工程方法论（TDD/代码评审/领域建模等）。",
+  "version": "0.2.0",
+  "description": "Claude Code 与 Codex 共用的中文技能集，包含工程方法、生产力、经典软件工程书籍、RAG、pi-agent 和按需讲解。",
   "author": {
     "name": "snow"
   },
@@ -9,6 +9,21 @@
   "skills": [
     "./skills/rag-lifecycle",
     "./skills/dg-piagent",
+    "./skills/explain",
+    "./skills/books/a-philosophy-of-software-design",
+    "./skills/books/clean-architecture",
+    "./skills/books/clean-code",
+    "./skills/books/code-complete",
+    "./skills/books/designing-data-intensive-applications",
+    "./skills/books/domain-driven-design",
+    "./skills/books/domain-driven-design-distilled",
+    "./skills/books/implementing-domain-driven-design",
+    "./skills/books/patterns-of-enterprise-application-architecture",
+    "./skills/books/refactoring",
+    "./skills/books/refactoring-guru",
+    "./skills/books/release-it",
+    "./skills/books/the-pragmatic-programmer",
+    "./skills/books/working-effectively-with-legacy-code",
     "./skills/engineering/ask-matt",
     "./skills/engineering/code-review",
     "./skills/engineering/codebase-design",

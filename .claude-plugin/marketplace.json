@@ -3,12 +3,12 @@
   "owner": {
     "name": "snow"
   },
-  "description": "snow 的个人 Claude Code skill 集合（RAG / pi-agent / 工程方法论）。",
+  "description": "snow-skills 双端插件市场",
   "plugins": [
     {
       "name": "snow-skills",
       "source": "./",
-      "description": "个人 skill 集合：RAG 架构设计与评测、pi-agent SDK 开发、工程方法论（TDD/代码评审/领域建模等）。",
+      "description": "Claude Code 与 Codex 共用的中文技能集，包含工程方法、生产力、经典软件工程书籍、RAG、pi-agent 和按需讲解。",
       "category": "personal"
     }
   ]
