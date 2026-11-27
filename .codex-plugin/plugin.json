@@ -1,0 +1,20 @@
+{
+  "name": "snow-skills",
+  "version": "0.2.0",
+  "description": "Claude Code 与 Codex 共用的中文技能集，包含工程方法、生产力、经典软件工程书籍、RAG、pi-agent 和按需讲解。",
+  "skills": "./skills/",
+  "hooks": {
+    "hooks": {
+      "SessionStart": [
+        {
+          "hooks": [
+            {
+              "type": "command",
+              "command": "sed '1,/^---$/d' \"${PLUGIN_ROOT}/output-styles/ste-80.md\""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
